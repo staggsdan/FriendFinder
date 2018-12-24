@@ -1,1 +1,5 @@
 # FriendFinder
+
+I spent almost my entire weekend working on and/or thinking about this project, plus sporadic time through my week. It's incomplete and I'm very frustrated. My two absences in the last two weeks, one due to eight weeks of accumulated exhaustion and one because my furnace broke, could not have come at worse times. My basic understanding of MySQL was fine and conceptually I understand routes and pathing, but looking at the additional elements from the last few days and aping the classroom exercises is not getting me anywhere near the finish line on this project and with the rapidly increasing architecture of a site/app, it finally feels like total gibberish.
+
+Whether or not I can get credit improved credit for this work later, I absolutely need extra instruction with this to continue growing. I have not utilized my tutor every single week, but there were easy weeks in the middle of the class and it did not feel pressing. My understanding is that tutors are available only through the ninth week.

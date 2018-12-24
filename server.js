@@ -1,41 +1,14 @@
-// Dependencies
-// ===========================================================
-var express = require("express");
+const express = require("express");
+const app = express();
+app.use(express.static("public"));
+const PORT = process.env.PORT || 3000;
 
-var app = express();
-var PORT = 3000;
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Data
-// ===========================================================
-var yoda = {
-  name: "Yoda",
-  role: "Jedi Master",
-  age: 900,
-  forcePoints: 2000
-};
+const routes = require('./routes');
+app.use(routes);
 
-var darthmaul = {
-  name: "Darth Maul",
-  role: "Sith Lord",
-  age: 200,
-  forcePoints: 1200
-};
-
-// Routes
-// ===========================================================
-app.get("/", function(req, res) {
-    res.send("Welcome to the Star Wars Page!");
-  });
-  
-  app.get("/yoda", function(req, res) {
-    res.json(yoda);
-  });
-
-
-
-  // Listener
-// ===========================================================
 app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
-  
+console.log("server listening on http://localhost: " + PORT)
+})
